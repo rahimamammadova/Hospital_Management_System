@@ -11,7 +11,7 @@ namespace HMS_BLL.Validations
     public class HospitalValidator : AbstractValidator<Hospital>
     {
         public HospitalValidator() {
-            RuleFor(x => x.HospitalName).NotEmpty().NotNull().WithMessage("Hospital name is required.").MaximumLength(256)
+            RuleFor(x => x.Name).NotEmpty().NotNull().WithMessage("Hospital name is required.").MaximumLength(256)
                 .WithMessage("Hospital name can't contain more than 256 characters.");
         }
     }

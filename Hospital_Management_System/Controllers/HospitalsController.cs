@@ -50,7 +50,7 @@ namespace HMS_API.Controllers
         [HttpDelete("id")]
         public ActionResult<HospitalDto> Delete(int id) {
             var item = _hospitalService.DeleteAsync(id);
-            _logger.Log(LogLevel.Critical, $"{item.HospitalName} with id: {item.Id} has been deleted from the system");
+            _logger.Log(LogLevel.Critical, $"{item} with id: {item.Id} has been deleted from the system");
             return Ok(item);
         }
     }
