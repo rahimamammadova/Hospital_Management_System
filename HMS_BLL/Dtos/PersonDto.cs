@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HMS_BLL.Dtos
 {
-    public class PersonDto
+    public class PersonDto:BaseDto
     {
         public string Firstname { get; set; }
         public string Lastname { get; set; }
